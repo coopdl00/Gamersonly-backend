@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'AllPlatforms.apps.AllplatformsConfig',
     'Platforms.apps.PlatformsConfig',
     'Users.apps.UsersConfig',
     'Threads.apps.ThreadsConfig',
