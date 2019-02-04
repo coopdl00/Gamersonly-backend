@@ -1,0 +1,281 @@
+[{
+        "model": "AllPlatforms.allplatforms",
+        "pk": 1,
+        "fields": {
+            "name": "PS4"
+        }
+    },
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 2,
+        "fields": {
+            "name": "Xbox One"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 3,
+        "fields": {
+            "name": "Nintendo Switch"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 4,
+        "fields": {
+            "name": "PS3"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 5,
+        "fields": {
+            "name": "Xbox 360"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 6,
+        "fields": {
+            "name": "Nintendo Wii"
+        }
+    },
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 7,
+        "fields": {
+            "name": "PS2"
+        }
+    },
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 8,
+        "fields": {
+            "name": "Xbox"
+        }
+    },
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 9,
+        "fields": {
+            "name": "Nintendo GameCube"
+        }
+    },
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 10,
+        "fields": {
+            "name": "PS1"
+        }
+    },
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 11,
+        "fields": {
+            "name": "Nintendo 64"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 12,
+        "fields": {
+            "name": "Sega DreamCast"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 13,
+        "fields": {
+            "name": "Nintendo SNES"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 14,
+        "fields": {
+            "name": "Sega Saturn"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 15,
+        "fields": {
+            "name": "Nintendo NES"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 16,
+        "fields": {
+            "name": "Sega Genesis"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 17,
+        "fields": {
+            "name": "Nintendo Wii U"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 18,
+        "fields": {
+            "name": "Mattel Intellivision"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 19,
+        "fields": {
+            "name": "Casio Casio Loopy"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 20,
+        "fields": {
+            "name": "Atari Jaguar"
+        }
+    },
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 21,
+        "fields": {
+            "name": "Atari 2600"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 22,
+        "fields": {
+            "name": "Bandai Apple Bandai Pippin"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 23,
+        "fields": {
+            "name": "NEC TurboGrafx-16"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 24,
+        "fields": {
+            "name": "Commodore Commodore 64 Games System"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 25,
+        "fields": {
+            "name": "Philips Magnavox Odyssey"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 26,
+        "fields": {
+            "name": "SNK Neo Geo"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 27,
+        "fields": {
+            "name": "VTech Socrates"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 28,
+        "fields": {
+            "name": "3DO Interactive Multiplayer"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 29,
+        "fields": {
+            "name": "Nvidia Shield"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 30,
+        "fields": {
+            "name": "Nokia N-Gage"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 31,
+        "fields": {
+            "name": "Nintendo Virtual Boy"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 32,
+        "fields": {
+            "name": "Super Lady Cassette Vision"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 33,
+        "fields": {
+            "name": "Rollet Videocolor"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 34,
+        "fields": {
+            "name": "Nintendo Game Boy"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 35,
+        "fields": {
+            "name": "Playstation Portable"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 36,
+        "fields": {
+            "name": "Nintendo DS"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 37,
+        "fields": {
+            "name": "Playstation Vita Slim"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 38,
+        "fields": {
+            "name": "Nintendo Game Boy Color"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 39,
+        "fields": {
+            "name": "The Oregon Trail Handheld Game"
+        }
+    }, 
+    {
+        "model": "AllPlatforms.allplatforms",
+        "pk": 40,
+        "fields": {
+            "name": "Nintendo Game Boy Advance"
+        }
+    }
+]

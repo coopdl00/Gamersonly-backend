@@ -1,4 +1,4 @@
-#!/Users/mod/Workspace/Q3/q3_project/raiders-only.com/Q3_Project/venv/bin/python3
+#!/Users/mod/Workspace/Q3/q3_project/raiders-only.com/Q3_Project/venv/bin/python3.7
 from django.core import management
 
 if __name__ == "__main__":
