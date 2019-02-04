@@ -1,4 +1,4 @@
-#!/Users/mod/Workspace/Q3/q3_project/raiders-only.com/Q3_Project/venv/bin/python3
+#!/Users/mod/Workspace/Q3/q3_project/raiders-only.com/Q3_Project/venv/bin/python3.7
 # -*- coding: utf-8 -*-
 import re
 import sys
