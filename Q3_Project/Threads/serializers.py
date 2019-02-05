@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Threads
-from Users.models import Users
-from Users.serializers import UsersSerializer
+# from Users.models import Users
+# from Users.serializers import UsersSerializer
 
 class ThreadsSerializer(serializers.ModelSerializer):
     class Meta:
@@ -9,8 +9,8 @@ class ThreadsSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class UserSerializer(serializers.ModelSerializer):
+# class UserSerializer(serializers.ModelSerializer):
 
-    class Meta:
-        model = Users
-        fields = '__all__'
+#     class Meta:
+#         model = Users
+#         fields = '__all__'

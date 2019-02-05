@@ -20,6 +20,6 @@ class ThreadsDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ThreadsSerializer
 
 
-class UsersViewSet(viewsets.ModelViewSet):
-    queryset = Users.objects.all()
-    serializer_class = UsersSerializer
+# class UsersViewSet(viewsets.ModelViewSet):
+#     queryset = Users.objects.all()
+#     serializer_class = UsersSerializer
