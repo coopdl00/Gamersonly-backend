@@ -26,6 +26,8 @@ SECRET_KEY = 'z@(2jp%(&kb+_x3!h9&ia%2@h%xcq**&b+1t6wja!k@op%r+68'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['sub.localhost', 'lvh.me']
+
 
 
 # Application definition
@@ -34,7 +36,6 @@ INSTALLED_APPS = [
     'AllPlatforms.apps.AllplatformsConfig',
     'Platforms.apps.PlatformsConfig',
     'Users.apps.UsersConfig',
-    'Threads.apps.ThreadsConfig',
     'Posts.apps.PostsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -139,10 +140,8 @@ AUTHENTICATION_BACKENDS = (
     # 'oauth2_provider.backends.OAuth2Backend',
     'rest_framework_social_oauth2.backends.DjangoOAuth2',
     'django.contrib.auth.backends.ModelBackend',  # To keep the Browsable API
+    'social_core.backends.github.GithubOAuth2',
 )
-
-ALLOWED_HOSTS = ['sub.localhost', 'lvh.me']
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
@@ -164,3 +163,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+SOCIAL_AUTH_GITHUB_KEY = '01802d402c1de18115ed'
+SOCIAL_AUTH_GITHUB_SECRET = 'afb112f12071b413af76e285f52318047f33da7e'

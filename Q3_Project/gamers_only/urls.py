@@ -21,7 +21,6 @@ schema_view = get_swagger_view(title='ToDo API')
 
 urlpatterns = [
     path('api/', include('Users.urls')),
-    path('api/', include('Threads.urls')),
     path('api/', include('Posts.urls')),
     path('api/', include('Platforms.urls')),
     path('api/', include('AllPlatforms.urls')),
