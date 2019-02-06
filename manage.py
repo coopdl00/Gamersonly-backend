@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import django_heroku
 import os
 import sys
 
