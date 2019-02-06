@@ -5,9 +5,13 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework import permissions
+
 
 from .models import Users
 from .serializers import UsersSerializer
+from .permissions import IsOwnerOrReadOnly
+
 
 
 # Create your views here.
@@ -36,9 +40,12 @@ from .serializers import UsersSerializer
 class UsersListCreate(generics.ListCreateAPIView):
     queryset = Users.objects.all()
     serializer_class = UsersSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly,)
 
 
 class UsersDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Users.objects.all()
     serializer_class = UsersSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly,)
+
 

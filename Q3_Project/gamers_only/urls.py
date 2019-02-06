@@ -15,16 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework_swagger.views import get_swagger_view
 
-
+schema_view = get_swagger_view(title='ToDo API')
 
 urlpatterns = [
     path('api/', include('Users.urls')),
-    path('api/', include('Threads.urls')),
     path('api/', include('Posts.urls')),
     path('api/', include('Platforms.urls')),
     path('api/', include('AllPlatforms.urls')),
     path("admin/", admin.site.urls),
+    path('auth/', include('rest_framework_social_oauth2.urls')),
     path('oauth/', include('rest_framework.urls')),
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    path('swag/', schema_view),
 ]
