@@ -167,7 +167,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 SOCIAL_AUTH_GITHUB_KEY = '01802d402c1de18115ed'
 SOCIAL_AUTH_GITHUB_SECRET = 'afb112f12071b413af76e285f52318047f33da7e'
 
-# import dj_database_url
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 django_heroku.settings(locals())
