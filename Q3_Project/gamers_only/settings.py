@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
-
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -26,6 +26,8 @@ SECRET_KEY = 'z@(2jp%(&kb+_x3!h9&ia%2@h%xcq**&b+1t6wja!k@op%r+68'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['sub.localhost', 'lvh.me']
+
 
 
 # Application definition
@@ -34,7 +36,6 @@ INSTALLED_APPS = [
     'AllPlatforms.apps.AllplatformsConfig',
     'Platforms.apps.PlatformsConfig',
     'Users.apps.UsersConfig',
-    'Threads.apps.ThreadsConfig',
     'Posts.apps.PostsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,11 +44,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
+    'oauth2_provider',
+    'rest_framework_swagger',
+    'social_django',
+    'rest_framework_social_oauth2',
+    # 'provider',
+    # 'provider.oauth2',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    # 'oauth2_provider.middleware.OAuth2TokenMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -68,6 +78,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -107,6 +119,15 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # 'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+        'rest_framework_social_oauth2.authentication.SocialAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
     ),
@@ -115,6 +136,12 @@ REST_FRAMEWORK = {
     )
 }
 
+AUTHENTICATION_BACKENDS = (
+    # 'oauth2_provider.backends.OAuth2Backend',
+    'rest_framework_social_oauth2.backends.DjangoOAuth2',
+    'django.contrib.auth.backends.ModelBackend',  # To keep the Browsable API
+    'social_core.backends.github.GithubOAuth2',
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
@@ -134,3 +161,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+SOCIAL_AUTH_GITHUB_KEY = '01802d402c1de18115ed'
+SOCIAL_AUTH_GITHUB_SECRET = 'afb112f12071b413af76e285f52318047f33da7e'
+
+# import dj_database_url
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+django_heroku.settings(locals())
