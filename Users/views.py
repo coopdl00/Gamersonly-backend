@@ -10,7 +10,7 @@ from rest_framework import permissions
 
 from .models import Users
 from .serializers import UsersSerializer
-from .permissions import IsOwnerOrReadOnly
+# from .permissions import IsOwnerOrReadOnly
 
 
 
@@ -40,12 +40,12 @@ from .permissions import IsOwnerOrReadOnly
 class UsersListCreate(generics.ListCreateAPIView):
     queryset = Users.objects.all()
     serializer_class = UsersSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly,)
+    # permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly,)
 
 
 class UsersDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Users.objects.all()
     serializer_class = UsersSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly,)
+    # permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly,)
 
 

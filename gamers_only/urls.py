@@ -25,8 +25,8 @@ urlpatterns = [
     path('api/', include('Platforms.urls')),
     path('api/', include('AllPlatforms.urls')),
     path("admin/", admin.site.urls),
-    path('auth/', include('rest_framework_social_oauth2.urls')),
-    path('oauth/', include('rest_framework.urls')),
-    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
-    path('swag/', schema_view),
+    # path('auth/', include('rest_framework_social_oauth2.urls')),
+    # path('oauth/', include('rest_framework.urls')),
+    # path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    path('swag/', schema_view), 
 ]

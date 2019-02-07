@@ -10,3 +10,8 @@ from .serializers import PlatformsSerializer
 class PlatformsListCreate(generics.ListCreateAPIView):
     queryset = Platforms.objects.all()
     serializer_class = PlatformsSerializer
+
+
+class PlatformsDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Platforms.objects.all()
+    serializer_class = PlatformsSerializer
